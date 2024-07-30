@@ -95,17 +95,5 @@ ionic cap open ios
 
 ## Authors
 
-- **Your Name** - *Initial work* - [YourProfile](https://github.com/YourProfile)
+- Khalid Alhabibie
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-```
-
-### Notes
-
-1. **Repository URL**: Replace `https://your-repository-url.git` with the actual URL of your GitHub repository.
-2. **Running on Mobile**: The instructions provided are for testing the app on Android and iOS. Make sure you have Android Studio and Xcode installed for Android and iOS development, respectively.
-3. **License**: Adjust the licensing according to your preference; the example uses MIT by default.
-
-This README provides a comprehensive guide for anyone who wants to get your application running on different platforms, making it easier for other developers to understand and use your project.
