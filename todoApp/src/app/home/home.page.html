@@ -1,0 +1,22 @@
+<!-- src/app/home/home.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>To-Do App</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let todo of todos | async">
+      <ion-label [class.completed]="todo.completed">{{ todo.title }}</ion-label>
+      <ion-checkbox slot="start" [(ngModel)]="todo.completed" (ngModelChange)="toggleTask(todo.id)"></ion-checkbox>
+      <ion-button fill="clear" color="danger" (click)="deleteTask(todo.id)">
+        Delete
+      </ion-button>
+    </ion-item>
+  </ion-list>
+  <ion-item>
+    <ion-input [(ngModel)]="taskTitle" placeholder="Add a new task..."></ion-input>
+    <ion-button (click)="addTask(taskTitle)">Add Task</ion-button>
+  </ion-item>
+</ion-content>
